@@ -1,8 +1,8 @@
-# Paul's dotfiles.
+# Larry's dotfiles.
 
-[mathias's readme](https://github.com/mathiasbynens/dotfiles/) is awesome. go read it.
+This is a fork of [Paul's dotfiles](https://github.com/paulirish/dotfiles). Originally forked from [mathiasbynens](https://github.com/mathiasbynens/dotfiles/) dotfiles.
 
-This repo is mostly for me but you're welcome to make suggestions. Mathias's is the project to fork.  I'm mostly catching up to him, @cowboy, and @gf3.
+This repo contains my customizations. Mathias's is the project to fork.
 
 ## install the neccessary apps
 
@@ -16,7 +16,7 @@ I do something nice with my `PATH` there:
 
 ```shell
 # PATH like a bawss
-      PATH=/opt/local/bin
+PATH=/opt/local/bin
 PATH=$PATH:/opt/local/sbin
 PATH=$PATH:/bin
 PATH=$PATH:~/.rvm/bin
@@ -81,7 +81,7 @@ I recommend getting a [`.jshintrc`](https://github.com/jshint/node-jshint/blob/m
 ## Installation
 
 ```bash
-git clone https://github.com/paulirish/dotfiles.git && cd dotfiles && ./sync.sh
+git clone git@github.com:psyrendust/dotfiles.git ~/dev/bin/dotfiles && cd ~/dev/bin/dotfiles && ./sync.sh
 ```
 
 To update later on, just run the sync again.

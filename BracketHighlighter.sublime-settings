@@ -1,0 +1,8 @@
+{
+	//Enable bracket matching on type
+    "quote_enable" : false,
+    "curly_enable" : true,
+    "round_enable" : true,
+    "square_enable": true,
+    "angle_enable" : true
+}
