@@ -9,7 +9,7 @@ fi
 cd "$(dirname "$0")"
 git pull
 function doIt() {
-	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "*.sh" --exclude "*.md" --exclude "*.tmTheme" --exclude "*.sublime-*" -av . ~
+	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "*.sh" --exclude "*.md" --exclude "nosync/" -av . ~
 }
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
 	doIt
@@ -23,11 +23,12 @@ fi
 unset doIt
 # copy my tmTheme to TextMate and Sublime Edit 2
 SUBLIME="$me/Library/Application Support/Sublime Text 2/Packages/User";
-rsync "Sunburst-psyrendust.tmTheme" "$me/Library/Application Support/TextMate/Themes/Sunburst-psyrendust.tmTheme";
-rsync "Sunburst-psyrendust.tmTheme" "$SUBLIME/Sunburst-psyrendust.tmTheme";
-rsync "BracketHighlighter.sublime-settings" "$SUBLIME/BracketHighlighter.sublime-settings";
-rsync "Preferences.sublime-settings" "$SUBLIME/Preferences.sublime-settings";
-rsync "Default (Linux).sublime-keymap" "$SUBLIME/Default (Linux).sublime-keymap";
-rsync "Default (OSX).sublime-keymap" "$SUBLIME/Default (OSX).sublime-keymap";
-rsync "Default (Windows).sublime-keymap" "$SUBLIME/Default (Windows).sublime-keymap";
+rsync "nosync/Sunburst-psyrendust.tmTheme" "$me/Library/Application Support/TextMate/Themes/Sunburst-psyrendust.tmTheme";
+rsync "nosync/Sunburst-psyrendust.tmTheme" "$SUBLIME/Sunburst-psyrendust.tmTheme";
+rsync "nosync/BracketHighlighter.sublime-settings" "$SUBLIME/BracketHighlighter.sublime-settings";
+rsync "nosync/Preferences.sublime-settings" "$SUBLIME/Preferences.sublime-settings";
+rsync "nosync/Default (Linux).sublime-keymap" "$SUBLIME/Default (Linux).sublime-keymap";
+rsync "nosync/Default (OSX).sublime-keymap" "$SUBLIME/Default (OSX).sublime-keymap";
+rsync "nosync/Default (Windows).sublime-keymap" "$SUBLIME/Default (Windows).sublime-keymap";
+
 source ~/.bash_profile
