@@ -34,7 +34,6 @@ brew install optipng
 brew install jpeg-turbo
 brew link jpeg-turbo
 brew install phantomjs
-brew install node
 
 # Remove outdated versions from the cellar
 brew cleanup

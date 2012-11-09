@@ -30,6 +30,12 @@ sudo chown -R $USER /usr/local
 # install some homebrew stuff!
 . .brew
 
+# install nvm "Node Version Manager"
+curl https://raw.github.com/creationix/nvm/master/install.sh | sh
+
+# install the latest version of node
+nvm install 0.8
+
 # install npm
 curl https://npmjs.org/install.sh | sh
 
