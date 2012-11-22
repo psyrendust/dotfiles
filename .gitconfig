@@ -15,10 +15,12 @@
 	pl = !"git pull; git submodule foreach git pull origin master"
 	# Clone a repository including all submodules
 	c = clone --recursive
+	# Add all changes
+	a = add -A
 	# Commit all changes
 	ca = !git add -A && git commit -avm
-	# Switch to a branch, creating it if necessary
-	go = checkout -B
+	# Switch to a branch
+	co = checkout
 	# Show verbose output about tags, branches or remotes
 	tags = tag -l
 	branches = branch -a
@@ -40,6 +42,7 @@
 	excludesfile = ~/.gitignore
 	attributesfile = ~/.gitattributes
 	whitespace = fix,space-before-tab,tab-in-indent,trailing-space
+	editor = sbl -w
 [color "branch"]
 	current = yellow reverse
 	local = yellow
