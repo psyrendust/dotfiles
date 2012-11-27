@@ -27,7 +27,11 @@ appsupport="$me/Library/Application Support";
 
 # create symbolic links of my TextMate Theme to TextMate and Sublime Edit 2
 ln -sf "$dotfiles/Sublime/Packages/User/Sunburst-psyrendust.tmTheme" "$appsupport/TextMate/Themes/Sunburst-psyrendust.tmTheme";
+rm -rf "$appsupport/Sublime Text 2/Packages/User";
 ln -sf "$dotfiles/Sublime/Packages/User" "$appsupport/Sublime Text 2/Packages/User";
+
+# create symbolic link to Sublime Edit 2
+ln -sf "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" "/bin/sbl";
 
 # create symbolic links for all the dotfiles 
 ln -sf "$dotfiles/.ackrc" "$me/.ackrc";
