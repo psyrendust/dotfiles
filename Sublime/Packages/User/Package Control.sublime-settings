@@ -1,0 +1,22 @@
+{
+	"auto_upgrade_last_run": null,
+	"installed_packages":
+	[
+		"BracketHighlighter",
+		"Dotfiles Syntax Highlighting",
+		"jQuery",
+		"JsFormat",
+		"Package Control",
+		"SCSS",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"TagWrapper"
+	],
+	"repositories":
+	[
+		"https://github.com/mattbanks/dotfiles-syntax-highlighting-st2",
+		"https://github.com/jdc0589/JsFormat",
+		"https://github.com/pyparadigm/SublimeBrackets",
+		"https://github.com/pyparadigm/SublimeTagmatcher"
+	]
+}

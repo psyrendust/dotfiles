@@ -1,0 +1,52 @@
+<snippet>
+	<content><![CDATA[
+# Numerous always-ignore extensions
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.vi
+*~
+*.sass-cache
+
+# OS or Editor folders
+.DS_Store
+.cache
+.project
+.settings
+.tmproj
+nbproject
+Thumbs.db
+
+# Dreamweaver added files
+_notes
+dwsync.xml
+
+# Komodo
+*.komodoproject
+.komodotools
+
+# Folders to ignore
+.hg
+.svn
+.CVS
+intermediate
+publish
+.idea
+docs
+intermediate
+temp
+node_modules
+
+# build script local files
+build/buildinfo.properties
+build/config/buildinfo.properties
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>gitignore</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>.gitignore</scope> -->
+</snippet>

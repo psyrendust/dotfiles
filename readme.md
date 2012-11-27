@@ -81,7 +81,7 @@ I recommend getting a [`.jshintrc`](https://github.com/jshint/node-jshint/blob/m
 ## Installation
 
 ```bash
-git clone git@github.com:psyrendust/dotfiles.git ~/dev/bin/dotfiles && cd ~/dev/bin/dotfiles && ./sync.sh
+git clone git@github.com:psyrendust/dotfiles.git ~/Dropbox/bin/dotfiles && cd ~/Dropbox/bin/dotfiles && ./sync.sh
 ```
 
 To update later on, just run the sync again.
