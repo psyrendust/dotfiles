@@ -9,7 +9,8 @@ alias -- -="cd -"
 # programs
 # alias sbl='open -a "Sublime Text 2"'
 # also/or do this:
-# ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" ~/bin/subl
+# ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" ~/bin/sbl
+# ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
 
 
 # be nice

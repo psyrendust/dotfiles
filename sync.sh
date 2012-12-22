@@ -25,6 +25,9 @@ git submodule foreach git pull origin master;
 dotfiles="$me/Dropbox/bin/dotfiles";
 appsupport="$me/Library/Application Support";
 
+# create symbolic link for MAMP mysql
+# ln -sf "/Applications/MAMP/Library/bin/mysql" "/usr/local/bin/mysql";
+
 # create symbolic links of my TextMate Theme to TextMate and Sublime Edit 2
 ln -sf "$dotfiles/Sublime/Packages/User/Sunburst-psyrendust.tmTheme" "$appsupport/TextMate/Themes/Sunburst-psyrendust.tmTheme";
 rm -rf "$appsupport/Sublime Text 2/Packages/User";
@@ -33,7 +36,7 @@ ln -sf "$dotfiles/Sublime/Packages/User" "$appsupport/Sublime Text 2/Packages/Us
 # create symbolic link to Sublime Edit 2
 ln -sf "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" "/bin/sbl";
 
-# create symbolic links for all the dotfiles 
+# create symbolic links for all the dotfiles
 ln -sf "$dotfiles/.ackrc" "$me/.ackrc";
 ln -sf "$dotfiles/.aliases" "$me/.aliases";
 ln -sf "$dotfiles/.bash_prompt" "$me/.bash_prompt";
@@ -58,3 +61,5 @@ rm -rf "$me/.vim";
 ln -sf "$dotfiles/.vim" "$me/.vim";
 
 source ~/.bash_profile
+killall -9 "Sublime Text 2"
+open -a "/Applications/Sublime Text 2.app"

@@ -1,4 +1,6 @@
 {
+	"theme": "Soda Dark.sublime-theme",
+	"soda_classic_tabs": true,
 	"color_scheme": "Packages/User/Sunburst-psyrendust.tmTheme",
 	"font_face": "Monaco",
 	"font_size": 12,
@@ -7,13 +9,16 @@
 	"draw_white_space": "all",
 	"find_selected_text": true,
 	"fold_buttons": false,
-	"highlight_line": true,
-	"highlight_modified_tabs": false,
-	"bold_folder_labels": false,
 	"rulers": [
-		72, 79
+		60, 72, 79
 	],
+	"word_wrap": "false",
+	"tab_size": 4,
+	"translate_tabs_to_spaces": false,
 	"indent_to_bracket": true,
-		"tab_size": 4,
-		"translate_tabs_to_spaces": false
+	"trim_trailing_white_space_on_save": true,
+	"drag_text": false,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"bold_folder_labels": true
 }

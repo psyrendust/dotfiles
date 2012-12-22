@@ -2,15 +2,29 @@
 	"auto_upgrade_last_run": null,
 	"installed_packages":
 	[
-		"BracketHighlighter",
+		"ApacheConf.tmLanguage",
+		"Backbone.js",
+		"Clientside",
+		"CTags",
+		"DetectSyntax",
+		"DocBlockr",
 		"Dotfiles Syntax Highlighting",
+		"EJS",
+		"Git",
+		"GitGutter",
+		"Grunt",
+		"Jasmine",
 		"jQuery",
 		"JsFormat",
 		"Package Control",
+		"RSpec",
+		"RubyTest",
 		"SCSS",
 		"SublimeCodeIntel",
 		"SublimeLinter",
-		"TagWrapper"
+		"TagWrapper",
+		"Theme - Soda",
+		"Underscore.js Snippets"
 	],
 	"repositories":
 	[
