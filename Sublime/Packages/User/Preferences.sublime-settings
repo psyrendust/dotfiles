@@ -4,6 +4,7 @@
 	"color_scheme": "Packages/User/Sunburst-psyrendust.tmTheme",
 	"font_face": "Monaco",
 	"font_size": 12,
+    "word_separators": "./\\()\"'-_:,.;<>~!@#$%^&*|+=[]{}`~?",
 	"auto_complete_commit_on_tab": true,
 	"auto_complete_with_fields": true,
 	"draw_white_space": "all",

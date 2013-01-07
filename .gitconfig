@@ -1,5 +1,4 @@
 [alias]
-	ci = commit -am
 	pu = push origin master
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 
@@ -17,8 +16,9 @@
 	cr = clone --recursive
 	# Add all changes
 	a = add -A
+	cm = commit -m
 	# Commit all changes
-	ca = !git add -A && git commit -avm
+	ca = !git add -A && git commit -vm
 	# Switch to a branch
 	co = checkout
 	# Show verbose output about tags, branches or remotes
@@ -31,6 +31,8 @@
 	reb = "!r() { git rebase -i HEAD~$1; }; r"
 	# Undo a `git push`
 	undopush = push -f origin HEAD^:master
+	# Undo a `git commit`
+	undocommit = reset --soft HEAD^
 
 [color]
 	# Use colors in Git commands that are capable of colored output when outputting to the terminal
