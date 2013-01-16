@@ -33,9 +33,22 @@
 	undopush = push -f origin HEAD^:master
 	# Undo a `git commit`
 	undocommit = reset --soft HEAD^
+	# Unstage a file
+	unstage = reset HEAD --
+	# Recursively take action on submodules: git add -A
+	fea = "submodule foreach git add -A"
+	# Recursively take action on submodules: git commit -m
+	fecm = "submodule foreach git commit -m"
+	# git merge with the --no-ff flag. This causes the merge to always create a
+	# new commit object, even if the merge could be performed with a fast-forward.
+	# This avoids losing information about the historical existence of a feature
+	# branch and groups together all commits that together added the feature.
+	# http://nvie.com/posts/a-successful-git-branching-model/
+	m = merge --no-ff
 
 [color]
-	# Use colors in Git commands that are capable of colored output when outputting to the terminal
+	# Use colors in Git commands that are capable of colored output when
+	# outputting to the terminal
 	ui = always
 [apply]
 	# Detect whitespace errors when applying a patch

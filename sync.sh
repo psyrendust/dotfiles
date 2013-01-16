@@ -23,7 +23,8 @@ git submodule foreach git pull origin master;
 # fi
 # unset doIt
 dotfiles="$me/Dropbox/bin/dotfiles";
-appsupport="$me/Library/Application Support";
+library="$me/Library";
+appsupport="$library/Application Support";
 
 # create symbolic link for MAMP mysql
 # ln -sf "/Applications/MAMP/Library/bin/mysql" "/usr/local/bin/mysql";
@@ -48,7 +49,6 @@ ln -sf "$dotfiles/.extra" "$me/.extra";
 ln -sf "$dotfiles/.functions" "$me/.functions";
 ln -sf "$dotfiles/.gitattributes" "$me/.gitattributes";
 ln -sf "$dotfiles/.gitconfig" "$me/.gitconfig";
-ln -sf "$dotfiles/.gitignore" "$me/.gitignore";
 ln -sf "$dotfiles/.gitk" "$me/.gitk";
 ln -sf "$dotfiles/.inputrc" "$me/.inputrc";
 ln -sf "$dotfiles/.osx" "$me/.osx";
@@ -56,6 +56,8 @@ ln -sf "$dotfiles/.rvmrc" "$me/.rvmrc";
 ln -sf "$dotfiles/.vimrc" "$me/.vimrc";
 ln -sf "$dotfiles/.zshrc" "$me/.zshrc";
 ln -sf "$dotfiles/mm.cfg" "$me/mm.cfg";
+
+ln -sf "$dotfiles/QuickLook" "$library/QuickLook"
 
 rm -rf "$me/.vim";
 ln -sf "$dotfiles/.vim" "$me/.vim";

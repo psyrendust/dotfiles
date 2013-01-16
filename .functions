@@ -17,7 +17,16 @@ function scpp() {
     echo "Copied to clipboard: http://paulirish.com/i/$1"
 }
 
+# usage
+# $ chrome index.html
+function chrome() {
+	open $@ --args --allow-file-access-from-files
+}
+
 # Start an HTTP server from a directory, optionally specifying the port
+# usage
+# server
+# server 8080
 function server() {
 	local port="${1:-8000}"
 	open "http://localhost:${port}/"
@@ -38,7 +47,6 @@ function gf() {
 AWK
   )" | less -F
 }
-
 
 # Copy w/ progress
 cp_p () {

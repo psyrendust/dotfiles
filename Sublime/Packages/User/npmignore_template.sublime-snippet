@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+.npmignore
+.editorconfig
+.gitattributes
+.travis.yml
+test
+grunt.js
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>npmignore</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>.npmignore</scope> -->
+</snippet>
