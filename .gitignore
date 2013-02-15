@@ -45,3 +45,5 @@ build/config/buildinfo.properties
 
 # super secret stuff
 .extra
+SVN.sublime-settings
+SFTP.sublime-settings
