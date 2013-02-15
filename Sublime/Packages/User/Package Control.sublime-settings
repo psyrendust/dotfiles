@@ -3,12 +3,15 @@
 	"installed_packages":
 	[
 		"Alignment",
+		"AndyPHP",
+		"AngularJS",
 		"ApacheConf.tmLanguage",
 		"Backbone.js",
 		"BracketHighlighter",
 		"Clientside",
-		"CSScomb",
+		"CSScomb Alpha Sort",
 		"DetectSyntax",
+		"Dictionaries",
 		"DocBlockr",
 		"Dotfiles Syntax Highlighting",
 		"EditorConfig",

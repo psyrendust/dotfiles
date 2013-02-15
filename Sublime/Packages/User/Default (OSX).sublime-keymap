@@ -1,3 +1,6 @@
 [
-     { "keys": ["super+alt+shift+w"], "command": "toggle_setting", "args": {"setting": "word_wrap"}}
+  { "keys": ["super+alt+shift+w"], "command": "toggle_setting", "args": {"setting": "word_wrap"}},
+  { "keys": ["super+alt+]"], "command": "reindent" },
+  { "keys": ["super+shift+v"], "command": "paste" },
+  { "keys": ["super+v"], "command": "paste_and_indent" }
 ]
