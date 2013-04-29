@@ -52,11 +52,12 @@
 	ui = always
 [apply]
 	# Detect whitespace errors when applying a patch
-	whitespace = fix
+	# whitespace = fix
 [core]
-	excludesfile = ~/.gitignore
-	attributesfile = ~/.gitattributes
-	whitespace = fix,space-before-tab,tab-in-indent,trailing-space
+	# excludesfile = ~/.gitignore
+	# attributesfile = ~/.gitattributes
+	# autocrlf = input
+	# whitespace = fix,space-before-tab,tab-in-indent,trailing-space
 	editor = sbl -w
 [color "branch"]
 	current = yellow reverse
@@ -75,6 +76,7 @@
 [merge]
 	# Include summaries of merged commits in newly created merge commit messages
 	log = true
+	tool = diffmerge
 
 # Use `origin` as the default remote on the `master` branch in all cases
 [branch "master"]
@@ -82,30 +84,38 @@
 	merge = refs/heads/master
 
 # URL shorthands
-[url "git@github.com:"]
-	insteadOf = "gh:"
-	pushInsteadOf = "github:"
-	pushInsteadOf = "git://github.com/"
-[url "git://github.com/"]
-	insteadOf = "github:"
-[url "git@gist.github.com:"]
-	insteadOf = "gst:"
-	pushInsteadOf = "gist:"
-	pushInsteadOf = "git://gist.github.com/"
-[url "git://gist.github.com/"]
-	insteadOf = "gist:"
+# [url "git@github.com:"]
+# 	insteadOf = "gh:"
+# 	pushInsteadOf = "github:"
+# 	pushInsteadOf = "git://github.com/"
+# [url "git://github.com/"]
+# 	insteadOf = "github:"
+# [url "git@gist.github.com:"]
+# 	insteadOf = "gst:"
+# 	pushInsteadOf = "gist:"
+# 	pushInsteadOf = "git://gist.github.com/"
+# [url "git://gist.github.com/"]
+# 	insteadOf = "gist:"
 
 # Any GitHub repo with my username should be checked out r/w by default
 # http://rentzsch.tumblr.com/post/564806957/public-but-hackable-git-submodules
-[url "git@github.com:psyrendust/"]
-  insteadOf = "git://github.com/psyrendust/"
+# [url "git@github.com:psyrendust/"]
+#   insteadOf = "git://github.com/psyrendust/"
 
-[difftool "Kaleidoscope"]
-	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
-[difftool]
-	prompt = false
+# [user]
+# 	name = Larry Gordon
+# 	email = larry@johnmcneilstudio.com
+
+# Setup DiffMerge as the tool of choice for merging and handling diffs
+[mergetool "diffmerge"]
+	cmd = diffmerge --merge --result=$MERGED $LOCAL $BASE $REMOTE
+	trustExitCode = true
+[mergetool]
+	keepBackup = false
 [diff]
-	tool = Kaleidoscope
+	tool = diffmerge
+[difftool "diffmerge"]
+	cmd = diffmerge $LOCAL $REMOTE
 [user]
 	name = Larry Gordon
 	email = larry@johnmcneilstudio.com

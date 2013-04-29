@@ -9,7 +9,7 @@
   "auto_complete_with_fields": true,
   "draw_white_space": "all",
   "draw_indent_guides": true,
-  "ensure_newline_at_eof_on_save": true,
+  "ensure_newline_at_eof_on_save": false,
   "indent_guide_options": ["draw_active"],
   "find_selected_text": true,
   "fold_buttons": false,
@@ -17,8 +17,8 @@
     60, 72, 80
   ],
   "default_line_ending": "system",
-  "word_wrap": "auto",
-  "spell_check": true,
+  "word_wrap": "false",
+  "spell_check": false,
   "tab_size": 2,
   "translate_tabs_to_spaces": true,
   "use_tab_stops": true,
@@ -26,6 +26,7 @@
   "trim_trailing_white_space_on_save": true,
   "drag_text": false,
   "highlight_line": true,
+  "tree_animation_enabled": false,
   "highlight_modified_tabs": true,
   "bold_folder_labels": true,
   // folder_exclude_patterns and file_exclude_patterns control which files

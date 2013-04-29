@@ -58,8 +58,8 @@ nvm install 0.8
 # install npm
 curl https://npmjs.org/install.sh | sh
 
-# install Yeoman
-npm install yeoman -g
+# install Yeoman, Bower, and Grunt Init
+npm install -g yo bower grunt-init grunt-cli
 
 # https://github.com/isaacs/nave
 # needs npm, obviously.

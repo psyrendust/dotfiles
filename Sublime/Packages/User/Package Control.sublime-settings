@@ -2,6 +2,7 @@
 	"auto_upgrade_last_run": null,
 	"installed_packages":
 	[
+		"ActionScript 3",
 		"Alignment",
 		"AndyPHP",
 		"AngularJS",
@@ -26,7 +27,6 @@
 		"JsFormat",
 		"LESS",
 		"Markdown Preview",
-		"MarkdownEditing",
 		"Origami",
 		"Package Control",
 		"PlainTasks",
@@ -37,13 +37,17 @@
 		"SCSS",
 		"SFTP",
 		"SideBarEnhancements",
+		"Sublime-JSHint",
 		"SublimeClang",
 		"SublimeCodeIntel",
 		"SublimeLinter",
+		"SublimeStringEncode",
 		"SVN",
 		"Tag",
 		"TagWrapper",
 		"Theme - Soda",
+		"TidyHTML5",
+		"Tritium",
 		"Underscore.js Snippets"
 	],
 	"repositories":
@@ -51,6 +55,8 @@
 		"https://github.com/mattbanks/dotfiles-syntax-highlighting-st2",
 		"https://github.com/jdc0589/JsFormat",
 		"https://github.com/pyparadigm/SublimeBrackets",
-		"https://github.com/pyparadigm/SublimeTagmatcher"
+		"https://github.com/pyparadigm/SublimeTagmatcher",
+		"https://github.com/colinta/SublimeStringEncode",
+		"https://github.com/jpatzer/Tritium.tmbundle/zipball/master"
 	]
 }

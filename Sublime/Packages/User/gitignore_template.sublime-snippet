@@ -40,6 +40,8 @@ intermediate
 temp
 tmp
 node_modules
+_drafts/
+_site/
 
 # build script local files
 build/buildinfo.properties

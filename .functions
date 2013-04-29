@@ -104,3 +104,19 @@ function unidecode() {
 	perl -e "binmode(STDOUT, ':utf8'); print \"$@\""
 	echo # newline
 }
+
+# Throttle RTMP connection
+# @param1 is the speed in kbytes
+# @param2 is the port to throttle
+# Use:
+# throttle 150 80
+throttle()
+{
+  sudo ipfw pipe 1 config bw $1KByte/s &&
+  sudo ipfw add 1 pipe 1 src-port $2
+}
+
+rmthrottle()
+{
+  sudo ipfw delete 1
+}

@@ -22,7 +22,7 @@ git submodule foreach git pull origin master;
 # 	fi
 # fi
 # unset doIt
-dotfiles="$me/Dropbox/bin/dotfiles";
+dotfiles="$me/Dropbox/bin/larry/dotfiles";
 library="$me/Library";
 appsupport="$library/Application Support";
 

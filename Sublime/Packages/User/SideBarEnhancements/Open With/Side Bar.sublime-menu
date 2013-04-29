@@ -28,24 +28,11 @@
 				"args": {
 									"paths": [],
 									"application": "Google Chrome.app",
-									"extensions":".*" //any file with extension
+									"extensions": "htm|html" //any file with extension
 								}
 			},
 
 			{"caption":"-"},
-
-			//application n
-			{
-				"caption": "Marked",
-				"id": "side-bar-files-open-with-marked",
-
-				"command": "side_bar_files_open_with",
-				"args": {
-									"paths": [],
-									"application": "Marked.app",
-									"extensions":"md" //any file with extension
-								}
-			},
 
 			//application n
 			{
@@ -56,7 +43,7 @@
 				"args": {
 									"paths": [],
 									"application": "Markdown Pro.app",
-									"extensions":"md" //any file with extension
+									"extensions": "md|markdown" //any file with extension
 								}
 			},
 
