@@ -5,6 +5,16 @@
 # the `push` command which copies the github compare URL to my clipboard is heaven
 sudo bash < <( curl https://raw.github.com/jamiew/git-friendly/master/install.sh)
 
+# homebrew!
+# you need the code CLI tools YOU FOOL.
+ruby <(curl -fsSkL raw.github.com/mxcl/homebrew/go)
+
+# Change ownership of /usr/local
+sudo chown -R $USER /usr/local
+
+# install some homebrew stuff!
+. .brew
+
 # I'm assuming that you have xCode 4.5.x+ installed. If so rvm won't work
 # because of:
 #   The provided compiler '/usr/bin/gcc' is LLVM based, it is not yet fully
@@ -38,16 +48,6 @@ gem install rails;
 # http://compass-style.org/install/
 gem update --system;
 gem install compass;
-
-# homebrew!
-# you need the code CLI tools YOU FOOL.
-ruby <(curl -fsSkL raw.github.com/mxcl/homebrew/go)
-
-# Change ownership of /usr/local
-sudo chown -R $USER /usr/local
-
-# install some homebrew stuff!
-. .brew
 
 # install nvm "Node Version Manager"
 curl https://raw.github.com/creationix/nvm/master/install.sh | sh
