@@ -16,7 +16,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
 
 # Menu bar: hide the useless Time Machine and Volume icons
-defaults write com.apple.systemuiserver menuExtras -array "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" "/System/Library/CoreServices/Menu Extras/AirPort.menu" "/System/Library/CoreServices/Menu Extras/Battery.menu" "/System/Library/CoreServices/Menu Extras/Clock.menu"
+defaults write com.apple.systemuiserver menuExtras -array "/System/Library/CoreServices/Menu Extras/Battery.menu" "/System/Library/CoreServices/Menu Extras/Clock.menu"
 
 # Disable smooth scrolling
 # (Uncomment if you’re on an older Mac that messes up the animation)
@@ -117,8 +117,10 @@ sudo chmod 444 /private/var/db/.AccessibilityAPIEnabled
 # Use scroll gesture with the Ctrl (^) modifier key to zoom
 defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
 defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
-# Follow the keyboard focus while zoomed in
-defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
+# Do not allow the keyboard focus while zoomed in
+defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool false
+# So that the pointer is at or near the center of the screen
+defaults write com.apple.universalaccess closeViewPanningMode -int 2
 
 # Disable press-and-hold for keys in favor of key repeat
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
@@ -132,16 +134,16 @@ defaults write com.apple.BezelServices kDim -bool true
 defaults write com.apple.BezelServices kDimTime -int 300
 
 
-# Disable auto-correct
-defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+# Enable auto-correct
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool true
 
 ###############################################################################
 # Screen                                                                      #
 ###############################################################################
 
 
-# Save screenshots to the desktop
-defaults write com.apple.screencapture location -string "$HOME/Desktop"
+# Save screenshots to the Downloads folder
+defaults write com.apple.screencapture location -string "$HOME/Downloads"
 
 # Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
 defaults write com.apple.screencapture type -string "png"
@@ -153,7 +155,7 @@ defaults write com.apple.screencapture disable-shadow -bool true
 defaults write NSGlobalDomain AppleFontSmoothing -int 2
 
 # Enable HiDPI display modes (requires restart)
-sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
+# sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
 
 ###############################################################################
 # Finder                                                                      #
@@ -186,9 +188,9 @@ defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
 # Automatically open a new Finder window when a volume is mounted
-defaults write com.apple.frameworks.diskimages auto-open-ro-root -bool true
-defaults write com.apple.frameworks.diskimages auto-open-rw-root -bool true
-defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
+#defaults write com.apple.frameworks.diskimages auto-open-ro-root -bool true
+#defaults write com.apple.frameworks.diskimages auto-open-rw-root -bool true
+#defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
 
 # Show item info below icons on the desktop and in other icon views
 /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:showItemInfo true" ~/Library/Preferences/com.apple.finder.plist
@@ -297,8 +299,8 @@ defaults write com.apple.Safari HomePage -string "about:blank"
 # Prevent Safari from opening ‘safe’ files automatically after downloading
 defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
 
-# Allow hitting the Backspace key to go to the previous page in history
-defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2BackspaceKeyNavigationEnabled -bool true
+# Dont' allow hitting the Backspace key to go to the previous page in history
+defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2BackspaceKeyNavigationEnabled -bool false
 
 # Hide Safari’s bookmarks bar by default
 defaults write com.apple.Safari ShowFavoritesBar -bool false
@@ -337,10 +339,10 @@ defaults write com.apple.iTunes show-store-link-arrows -bool false
 defaults write com.apple.iTunes disableGeniusSidebar -bool true
 
 # Disable the Ping sidebar in iTunes
-defaults write com.apple.iTunes disablePingSidebar -bool true
+# defaults write com.apple.iTunes disablePingSidebar -bool true
 
 # Disable all the other Ping stuff in iTunes
-defaults write com.apple.iTunes disablePing -bool true
+# defaults write com.apple.iTunes disablePing -bool true
 
 # Disable radio stations in iTunes
 defaults write com.apple.iTunes disableRadio -bool true
@@ -386,20 +388,20 @@ defaults write com.apple.terminal StringEncodings -array 4
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
 # Disable local Time Machine backups
-hash tmutil &> /dev/null && sudo tmutil disablelocal
+# hash tmutil &> /dev/null && sudo tmutil disablelocal
 
 ###############################################################################
 # Address Book, Dashboard, iCal, TextEdit, and Disk Utility                   #
 ###############################################################################
 
 # Enable the debug menu in Address Book
-defaults write com.apple.addressbook ABShowDebugMenu -bool true
+# defaults write com.apple.addressbook ABShowDebugMenu -bool true
 
 # Enable Dashboard dev mode (allows keeping widgets on the desktop)
 defaults write com.apple.dashboard devmode -bool true
 
 # Enable the debug menu in iCal (pre-10.8)
-defaults write com.apple.iCal IncludeDebugMenu -bool true
+# defaults write com.apple.iCal IncludeDebugMenu -bool true
 
 # Use plain text mode for new TextEdit documents
 defaults write com.apple.TextEdit RichText -int 0
@@ -432,7 +434,6 @@ defaults write com.irradiatedsoftware.SizeUp ShowPrefsOnNextStart -bool false
 ###############################################################################
 # Transmission.app                                                            #
 ###############################################################################
-
 
 # Don’t prompt for confirmation before downloading
 defaults write org.m0k.transmission DownloadAsk -bool false

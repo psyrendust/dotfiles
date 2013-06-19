@@ -1,30 +1,46 @@
-# Load ~/.extra, ~/.bash_prompt, ~/.exports, ~/.aliases and ~/.functions
-# ~/.extra can be used for settings you don’t want to commit
-for file in ~/.{extra,bash_prompt,exports,aliases,functions}; do
-	[ -r "$file" ] && source "$file"
-done
-unset file
+#!/usr/bin/env bash
 
-# init z   https://github.com/rupa/z
-. ~/dev/personal/github/z/z.sh
+# Load RVM, if you are using it
+# [[ -s $HOME/.rvm/bin/rvm ]] && source $HOME/.rvm/bin/rvm
 
-# init rvm
-source ~/.rvm/scripts/rvm
+# Add rvm gems and nginx to the path
+#export PATH=$PATH:~/.gem/ruby/1.8/bin:/opt/nginx/sbin
 
-# init nvm
-source ~/.nvm/nvm.sh
+# Add npm
+[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh
+
+# Path to the bash it configuration
+export BASH_IT=$HOME/.bash_it
+
+# Lock and Load a custom theme file
+# location /.bash_it/themes/
+export BASH_IT_THEME='bobby'
+
+# Your place for hosting Git repos. I use this for private repos.
+export GIT_HOSTING='git@git.domain.com'
+
+# Set my editor and git editor
+export EDITOR="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl -w"
+export GIT_EDITOR='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl -w'
+
+# Set the path nginx
+export NGINX_PATH='/opt/nginx'
+
+# Don't check mail when opening terminal.
+unset MAILCHECK
 
 
-# Case-insensitive globbing (used in pathname expansion)
-shopt -s nocaseglob
+# Change this to your console based IRC client of choice.
 
-# Prefer US English and use UTF-8
-export LC_ALL="en_US.UTF-8"
-export LANG="en_US"
+export IRC_CLIENT='irssi'
 
-# Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
-[ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2)" scp sftp ssh
+# Set this to the command you use for todo.txt-cli
 
-# Add tab completion for `defaults read|write NSGlobalDomain`
-# You could just use `-g` instead, but I like being explicit
-complete -W "NSGlobalDomain" defaults
+export TODO="t"
+
+# Set vcprompt executable path for scm advance info in prompt (demula theme)
+# https://github.com/xvzf/vcprompt
+#export VCPROMPT_EXECUTABLE=~/.vcprompt/bin/vcprompt
+
+# Load Bash It
+source $BASH_IT/bash_it.sh

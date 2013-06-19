@@ -1,5 +1,12 @@
 # up to you (me) if you want to run this as a file or copy paste at your leisure
 
+# let's do some admin type stuff
+# add myself to wheel group
+sudo groupadd -G $USER wheel
+
+# Change ownership of /usr/local
+sudo chown -R $USER /usr/local
+
 
 # https://github.com/jamiew/git-friendly
 # the `push` command which copies the github compare URL to my clipboard is heaven
@@ -8,9 +15,6 @@ sudo bash < <( curl https://raw.github.com/jamiew/git-friendly/master/install.sh
 # homebrew!
 # you need the code CLI tools YOU FOOL.
 ruby <(curl -fsSkL raw.github.com/mxcl/homebrew/go)
-
-# Change ownership of /usr/local
-sudo chown -R $USER /usr/local
 
 # install some homebrew stuff!
 . .brew
@@ -37,9 +41,10 @@ sudo chown -R $USER /usr/local
 # https://rvm.io
 # rvm for the rubiess
 curl -L https://get.rvm.io | bash -s stable --ruby;
+
 rvm install 1.8.7;
-rvm install 1.9.2;
-rvm --default 1.9.2;
+rvm install 1.9.3;
+rvm --default 1.9.3;
 ruby -v;
 which ruby;
 gem install rails;
@@ -53,24 +58,35 @@ gem install compass;
 curl https://raw.github.com/creationix/nvm/master/install.sh | sh
 
 # install the latest version of node
-nvm install 0.8
+nvm install v0.8.23
+nvm install v0.9.12
+nvm install v0.10.5
+nvm alias default 0.10.5
 
 # install npm
 curl https://npmjs.org/install.sh | sh
 
 # install Yeoman, Bower, and Grunt Init
-npm install -g yo bower grunt-init grunt-cli
+npm install -g yo bower grunt-init grunt-cli jshint
+
+# install some templates
+mkdir ~/.grunt-init
+git clone git@github.com:gruntjs/grunt-init-gruntfile.git ~/.grunt-init/gruntfile
+git clone git@github.com:gruntjs/grunt-init-commonjs.git ~/.grunt-init/commonjs
+git clone git@github.com:gruntjs/grunt-init-gruntplugin.git ~/.grunt-init/gruntplugin
+git clone git@github.com:gruntjs/grunt-init-jquery.git ~/.grunt-init/jquery
+git clone git@github.com:gruntjs/grunt-init-node.git ~/.grunt-init/node
 
 # https://github.com/isaacs/nave
 # needs npm, obviously.
 # TODO: I think i'd rather curl down the nave.sh, symlink it into /bin and use that for initial node install.
-npm install -g nave
+# npm install -g nave
 
 # https://github.com/rupa/z
 # z, oh how i love you
-mkdir -p ~/dev/z
-curl https://raw.github.com/rupa/z/master/z.sh > ~/dev/z/z.sh
-chmod +x ~/dev/z/z.sh
+# mkdir -p ~/dev/z
+# curl https://raw.github.com/rupa/z/master/z.sh > ~/dev/z/z.sh
+# chmod +x ~/dev/z/z.sh
 # also consider moving over your current .z file if possible. it's painful to rebuild :)
 
 # add this to the bash_profile file if it aint there.

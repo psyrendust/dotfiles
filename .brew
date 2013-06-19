@@ -13,6 +13,11 @@ echo "Don’t forget to add $(brew --prefix coreutils)/libexec/gnubin to \$PATH.
 brew install findutils
 # Install Bash 4
 brew install bash
+# Add it to the allowed shells list
+sudo bash -c "echo /usr/local/bin/bash >> /private/etc/shells"
+# Change shell to the new bash
+sudo chsh -s /usr/local/bin/bash
+echo "Run the following to make sure that everything went well:"; echo "echo \$SHELL && echo \$BASH_VERSION;";
 
 # Install wget with IRI support
 brew install wget --enable-iri
