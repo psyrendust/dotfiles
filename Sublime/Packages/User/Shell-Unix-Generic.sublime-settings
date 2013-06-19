@@ -23,6 +23,7 @@
 		".zshrc",
 		".zlogin",
 		".wgetrc",
-		".extra"
+		".extra",
+		"zsh-theme"
 	]
 }

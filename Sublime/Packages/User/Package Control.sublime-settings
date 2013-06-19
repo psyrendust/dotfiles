@@ -1,5 +1,4 @@
 {
-	"auto_upgrade_last_run": null,
 	"installed_packages":
 	[
 		"ActionScript 3",
@@ -7,29 +6,31 @@
 		"AndyPHP",
 		"AngularJS",
 		"ApacheConf.tmLanguage",
-		"Backbone.js",
+		"ApplySyntax",
 		"BracketHighlighter",
+		"Can I Use",
 		"Clientside",
+		"Console API Snippets (JavaScript)",
 		"CSScomb Alpha Sort",
-		"DetectSyntax",
-		"Dictionaries",
 		"DocBlockr",
 		"Dotfiles Syntax Highlighting",
 		"EditorConfig",
 		"EJS",
 		"FindKeyConflicts",
-		"Git",
 		"GitGutter",
 		"Grunt",
 		"Haml",
+		"HTML Mustache",
+		"Insert Nums",
 		"Jasmine",
 		"jQuery",
 		"JsFormat",
+		"JsRun",
+		"Lazy Backbone.js",
 		"LESS",
 		"Markdown Preview",
 		"Origami",
 		"Package Control",
-		"PlainTasks",
 		"Print to HTML",
 		"Quick File Creator",
 		"RSpec",
@@ -37,9 +38,6 @@
 		"SCSS",
 		"SFTP",
 		"SideBarEnhancements",
-		"Sublime-JSHint",
-		"SublimeClang",
-		"SublimeCodeIntel",
 		"SublimeLinter",
 		"SublimeStringEncode",
 		"SVN",
@@ -47,7 +45,6 @@
 		"TagWrapper",
 		"Theme - Soda",
 		"TidyHTML5",
-		"Tritium",
 		"Underscore.js Snippets"
 	],
 	"repositories":
@@ -57,6 +54,6 @@
 		"https://github.com/pyparadigm/SublimeBrackets",
 		"https://github.com/pyparadigm/SublimeTagmatcher",
 		"https://github.com/colinta/SublimeStringEncode",
-		"https://github.com/jpatzer/Tritium.tmbundle/zipball/master"
+		"https://github.com/SublimeCodeIntel/SublimeCodeIntel.git"
 	]
 }
