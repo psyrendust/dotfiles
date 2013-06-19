@@ -10,14 +10,7 @@ sudo chown -R $USER /usr/local
 
 # https://github.com/jamiew/git-friendly
 # the `push` command which copies the github compare URL to my clipboard is heaven
-sudo bash < <( curl https://raw.github.com/jamiew/git-friendly/master/install.sh)
-
-# homebrew!
-# you need the code CLI tools YOU FOOL.
-ruby <(curl -fsSkL raw.github.com/mxcl/homebrew/go)
-
-# install some homebrew stuff!
-. .brew
+# sudo bash < <( curl https://raw.github.com/jamiew/git-friendly/master/install.sh)
 
 # I'm assuming that you have xCode 4.5.x+ installed. If so rvm won't work
 # because of:
@@ -37,6 +30,9 @@ ruby <(curl -fsSkL raw.github.com/mxcl/homebrew/go)
 # 3. And finally install it
 #   sudo ditto build/dst /
 #   rm -rf ~/tmp
+
+# install some homebrew stuff
+. .brew
 
 # https://rvm.io
 # rvm for the rubiess
@@ -61,7 +57,7 @@ curl https://raw.github.com/creationix/nvm/master/install.sh | sh
 nvm install v0.8.23
 nvm install v0.9.12
 nvm install v0.10.5
-nvm alias default 0.10.5
+nvm alias default 0.8
 
 # install npm
 curl https://npmjs.org/install.sh | sh
