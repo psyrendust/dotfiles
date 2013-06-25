@@ -61,13 +61,13 @@ function sbl ()
   elif  [[ $('uname') == 'Darwin' ]]; then
 
     open "$ST_APP"
-    sleep 0.1
+    sleep 0.8
     "$ST_PATH" "$@"
 
   elif  [[ $('uname') == 'CYGWIN_NT-6.1-WOW64' ]]; then
 
     cygstart "$ST_APP"
-    sleep 0.1
+    sleep 0.8
     "$ST_PATH" "$@"
 
   fi

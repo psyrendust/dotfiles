@@ -1,6 +1,7 @@
 {
 	"extensions":
 	[
-		"vhost"
+		"vhost",
+		"config"
 	]
 }
