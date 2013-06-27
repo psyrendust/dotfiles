@@ -1,0 +1,3 @@
+[submodule "oh-my-zsh-psyrendust"]
+	path = oh-my-zsh-psyrendust
+	url = git@github.com:psyrendust/oh-my-zsh-psyrendust.git
