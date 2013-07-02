@@ -7,6 +7,7 @@
 		"AngularJS",
 		"ApacheConf.tmLanguage",
 		"ApplySyntax",
+		"Autocomplete Javascript with Method Signature",
 		"BracketHighlighter",
 		"Can I Use",
 		"Clientside",
@@ -20,6 +21,7 @@
 		"Grunt",
 		"Haml",
 		"HTML Mustache",
+		"INI",
 		"Insert Nums",
 		"Jasmine",
 		"jQuery",
@@ -32,6 +34,7 @@
 		"Package Control",
 		"Print to HTML",
 		"Quick File Creator",
+		"QuickPrint",
 		"RSpec",
 		"RubyTest",
 		"SCSS",
@@ -50,9 +53,8 @@
 	[
 		"https://github.com/mattbanks/dotfiles-syntax-highlighting-st2",
 		"https://github.com/jdc0589/JsFormat",
-		"https://github.com/pyparadigm/SublimeBrackets",
-		"https://github.com/pyparadigm/SublimeTagmatcher",
 		"https://github.com/colinta/SublimeStringEncode",
-		"https://github.com/SublimeCodeIntel/SublimeCodeIntel.git"
+		"https://github.com/SublimeCodeIntel/SublimeCodeIntel.git",
+		"https://github.com/marijnh/tern_for_sublime.git"
 	]
 }
