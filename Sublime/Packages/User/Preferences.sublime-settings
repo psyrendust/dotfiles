@@ -1,20 +1,32 @@
 {
+	"auto_complete": true,
 	"auto_complete_commit_on_tab": true,
+	"auto_complete_delay": 50,
+	"auto_complete_selector": "source - comment",
+	"auto_complete_size_limit": 4194304,
+	"auto_complete_triggers":
+	[
+		{
+			"characters": "<>\"'-_qazwsxedcrfvtgbyhnujmikolpQAZWSXEDCRFVTGBYHNUJMIKOLP",
+			"selector": "text, source, meta, string, punctuation, constant"
+		}
+	],
 	"auto_complete_with_fields": true,
 	"binary_file_patterns":
 	[
-		"*.jpg",
-		"*.jpeg",
-		"*.png",
-		"*.gif",
-		"*.ttf",
-		"*.tga",
 		"*.dds",
-		"*.ico",
+		"*.dll",
 		"*.eot",
-		"*.pdf",
-		"*.swf",
+		"*.gif",
+		"*.ico",
 		"*.jar",
+		"*.jpeg",
+		"*.jpg",
+		"*.pdf",
+		"*.png",
+		"*.swf",
+		"*.tga",
+		"*.ttf",
 		"*.zip"
 	],
 	"bold_folder_labels": true,
@@ -26,35 +38,35 @@
 	"ensure_newline_at_eof_on_save": false,
 	"file_exclude_patterns":
 	[
+		"*.a",
+		"*.class",
+		"*.db",
+		"*.dll",
+		"*.dylib",
+		"*.exe",
+		"*.idb",
+		"*.lib",
+		"*.ncb",
+		"*.o",
+		"*.obj",
+		"*.pdb",
+		"*.psd",
 		"*.pyc",
 		"*.pyo",
-		"*.exe",
-		"*.dll",
-		"*.obj",
-		"*.o",
-		"*.a",
-		"*.lib",
-		"*.so",
-		"*.dylib",
-		"*.ncb",
 		"*.sdf",
+		"*.so",
 		"*.suo",
-		"*.pdb",
-		"*.idb",
-		".DS_Store",
-		"*.class",
-		"*.psd",
-		"*.db"
+		".DS_Store"
 	],
 	"find_selected_text": true,
 	"fold_buttons": false,
 	"folder_exclude_patterns":
 	[
-		".svn",
 		".git",
 		".hg",
-		"CVS",
-		".sass-cache"
+		".sass-cache",
+		".svn",
+		"CVS"
 	],
 	"font_face": "Inconsolata",
 	"font_size": 13.0,
@@ -62,39 +74,42 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"Lazy Backbone.js",
-		"D",
-		"Scala",
-		"Vintage",
-		"AppleScript",
+		"ActionScript 3",
 		"ActionScript",
+		"AndyPHP",
+		"AngularJS",
+		"AppleScript",
+		"Clojure",
+		"D",
+		"EJS",
+		"Go",
+		"HTML Mustache",
 		"Jasmine",
+		"Lazy Backbone.js",
 		"OCaml",
 		"RSpec",
-		"AndyPHP",
+		"RubyTest",
+		"Scala",
 		"SQL",
 		"TCL",
-		"ActionScript 3",
-		"AngularJS",
 		"Underscore.js Snippets",
-		"Go",
-		"Clojure",
-		"RubyTest",
-		"HTML Mustache",
-		"EJS"
+		"Vintage"
 	],
 	"indent_guide_options":
 	[
 		"draw_active"
 	],
 	"indent_to_bracket": true,
+	"remember_open_files": false,
 	"rulers":
 	[
 		60,
 		80
 	],
+	"scroll_past_end": false,
+	"show_full_path": true,
 	"soda_classic_tabs": true,
-	"soda_folder_icons": true,
+	"soda_folder_icons": false,
 	"spell_check": false,
 	"tab_size": 2,
 	"tern_argument_hints": true,
@@ -115,5 +130,6 @@
 	"trim_trailing_white_space_on_save": true,
 	"use_tab_stops": true,
 	"word_separators": "./\\()\"'-_:,.;<>~!@#$%^&*|+=[]{}`~?",
-	"word_wrap": "false"
+	"word_wrap": "false",
+	"wrap_width": 80
 }
