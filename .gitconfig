@@ -14,7 +14,8 @@
 [core]
 	hidedotfiles = false
 	excludesfile = /Users/larrygordon/.gitignore_global
-	editor = mate -w
+	editor = subl -n -w
+	filemode = false
 [difftool "sourcetree"]
 	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --nosplash \"$LOCAL\" \"$REMOTE\"
 	path =

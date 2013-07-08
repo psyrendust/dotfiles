@@ -7,7 +7,7 @@
 	"auto_complete_triggers":
 	[
 		{
-			"characters": "<>\"'-_qazwsxedcrfvtgbyhnujmikolpQAZWSXEDCRFVTGBYHNUJMIKOLP",
+			"characters": "<>()\"'.-_qazwsxedcrfvtgbyhnujmikolpQAZWSXEDCRFVTGBYHNUJMIKOLP",
 			"selector": "text, source, meta, string, punctuation, constant"
 		}
 	],
@@ -32,6 +32,7 @@
 	"bold_folder_labels": true,
 	"color_scheme": "Packages/User/Sunburst-psyrendust.tmTheme",
 	"default_line_ending": "system",
+	"detect_slow_plugins": false,
 	"drag_text": false,
 	"draw_indent_guides": true,
 	"draw_white_space": "all",
@@ -74,26 +75,28 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"ActionScript 3",
-		"ActionScript",
-		"AndyPHP",
-		"AngularJS",
-		"AppleScript",
-		"Clojure",
-		"D",
-		"EJS",
-		"Go",
-		"HTML Mustache",
-		"Jasmine",
-		"Lazy Backbone.js",
-		"OCaml",
-		"RSpec",
-		"RubyTest",
 		"Scala",
-		"SQL",
+		"Vintage",
+		"SublimeLinter",
+		"AppleScript",
+		"LiveReload",
+		"Jasmine",
 		"TCL",
+		"AngularJS",
 		"Underscore.js Snippets",
-		"Vintage"
+		"Lazy Backbone.js",
+		"HTML Mustache",
+		"D",
+		"ActionScript",
+		"RSpec",
+		"ActionScript 3",
+		"Clojure",
+		"EJS",
+		"OCaml",
+		"AndyPHP",
+		"SQL",
+		"Go",
+		"RubyTest"
 	],
 	"indent_guide_options":
 	[
@@ -108,7 +111,7 @@
 	],
 	"scroll_past_end": false,
 	"show_full_path": true,
-	"soda_classic_tabs": true,
+	"soda_classic_tabs": false,
 	"soda_folder_icons": false,
 	"spell_check": false,
 	"tab_size": 2,
@@ -119,10 +122,8 @@
 	],
 	"tern_command":
 	[
-		{
-			"characters": ".",
-			"selector": "source.js"
-		}
+		"/Users/larrygordon/.nvm/v0.8.23/bin/node",
+		"/Users/larrygordon/Library/Application Support/Sublime Text 2/Packages/tern_for_sublime/node_modules/tern/bin/tern"
 	],
 	"theme": "Soda Dark.sublime-theme",
 	"translate_tabs_to_spaces": true,

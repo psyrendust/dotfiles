@@ -1,6 +1,9 @@
 {
 	"extensions":
 	[
-		".jshintrc"
+		".jshintrc",
+		".bowerrc",
+		"config",
+		".tern-project"
 	]
 }
