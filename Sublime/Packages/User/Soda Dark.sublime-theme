@@ -1,4 +1,79 @@
-// [
+[
+//
+// TABS (REGULAR)
+//
+
+    // Tab element
+    {
+        "class": "tab_control",
+        "content_margin": [12, 3, 12, 3],
+        "max_margin_trim": 0,
+        "hit_test_level": 0.0,
+        "layer0.texture": "User/SodaDark/tab-inactive.png",
+        "layer0.inner_margin": [5, 5],
+        "layer0.opacity": 1.0
+    },
+    // Tab close state
+    {
+        "class": "tab_control",
+        "settings": ["show_tab_close_buttons"],
+        "content_margin": [12, 3, 7, 3]
+    },
+    // Tab hover state
+    {
+        "class": "tab_control",
+        "attributes": ["hover"],
+        "layer0.texture": "Theme - Soda/Soda Dark/tab-hover.png"
+    },
+    // Tab active state
+    {
+        "class": "tab_control",
+        "attributes": ["selected"],
+        "layer0.texture": "Theme - Soda/Soda Dark/tab-active.png"
+    },
+    // Tab dirty state (close button hidden)
+    {
+        "class": "tab_control",
+        "settings": ["!show_tab_close_buttons"],
+        "attributes": ["dirty"],
+        "content_margin": [12, 3, 7, 3]
+    },
+    // Tab element
+    {
+        "class": "tab_control",
+        "settings": ["soda_classic_tabs"],
+        "content_margin": [22, 6, 22, 4],
+        "hit_test_level": 0.5,
+        "layer0.texture": "Theme - Soda/Soda Dark/classic/tab-inactive.png",
+        "layer0.inner_margin": [18, 4]
+    },
+    // Tab close state
+    {
+        "class": "tab_control",
+        "settings": ["soda_classic_tabs", "show_tab_close_buttons"],
+        "content_margin": [22, 6, 15, 4]
+    },
+    // Tab hover state
+    {
+        "class": "tab_control",
+        "settings": ["soda_classic_tabs"],
+        "attributes": ["hover"],
+        "layer0.texture": "Theme - Soda/Soda Dark/classic/tab-hover.png"
+    },
+    // Tab active state
+    {
+        "class": "tab_control",
+        "settings": ["soda_classic_tabs"],
+        "attributes": ["selected"],
+        "layer0.texture": "Theme - Soda/Soda Dark/classic/tab-active.png"
+    },
+    // Tab dirty state (close button hidden)
+    {
+        "class": "tab_control",
+        "settings": ["soda_classic_tabs", "!show_tab_close_buttons"],
+        "attributes": ["dirty"],
+        "content_margin": [22, 6, 15, 4]
+    }
 // //
 // // SIDEBAR
 // //
@@ -84,4 +159,4 @@
 //         "shadow_color": [0, 0, 0],
 //         "shadow_offset": [0, 1]
 //     }
-// ]
+]
