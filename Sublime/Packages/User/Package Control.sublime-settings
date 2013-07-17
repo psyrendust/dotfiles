@@ -1,4 +1,5 @@
 {
+	"auto_upgrade_last_run": null,
 	"installed_packages":
 	[
 		"ActionScript 3",
@@ -22,14 +23,15 @@
 		"HTML Mustache",
 		"INI",
 		"Insert Nums",
+		"Jade",
 		"Jasmine",
 		"JavaScript Refactor",
 		"jQuery",
 		"JsFormat",
-		"JSHint",
 		"JsRun",
 		"Lazy Backbone.js",
 		"LESS",
+		"Liquid",
 		"LiveReload",
 		"Markdown Preview",
 		"MarkdownEditing",
@@ -44,7 +46,7 @@
 		"SFTP",
 		"SideBarEnhancements",
 		"SublimeLinter",
-		"SublimeOnSaveBuild",
+		"SublimeLinter Beta",
 		"SublimeStringEncode",
 		"SVN",
 		"Tag",
@@ -58,6 +60,7 @@
 		"https://github.com/jdc0589/JsFormat",
 		"https://github.com/colinta/SublimeStringEncode",
 		"https://github.com/SublimeCodeIntel/SublimeCodeIntel.git",
-		"https://github.com/marijnh/tern_for_sublime.git"
+		"https://github.com/marijnh/tern_for_sublime.git",
+		"https://github.com/dnfehren/SublimeJekyll"
 	]
 }

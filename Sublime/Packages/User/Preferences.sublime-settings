@@ -132,5 +132,5 @@
 	"use_tab_stops": true,
 	"word_separators": "./\\()\"'-_:,.;<>~!@#$%^&*|+=[]{}`~?",
 	"word_wrap": "false",
-	"wrap_width": 80
+	"wrap_width": 0
 }
